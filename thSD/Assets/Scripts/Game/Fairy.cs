@@ -146,6 +146,7 @@ public class Fairy : MonoBehaviour
 
     IEnumerator yellowFairyShots(int shotCount, float bulletSpeed, int count)
     {
+        float waitTime = Random.Range(0.125f, 0.5f);
         for(int rep = 0; rep < count; rep++)
         {
             _as.PlayOneShot(fairyData.bulletShootSound);
@@ -160,7 +161,7 @@ public class Fairy : MonoBehaviour
                 bullets.GetComponent<Bullet>().direction = ((i - shotCount / 2) * (float)(180 / shotCount));
                 bullets.SetActive(true);
             }
-            yield return new WaitForSeconds((float) 1 / count);
+            yield return new WaitForSeconds(waitTime);
         }
     }
 }

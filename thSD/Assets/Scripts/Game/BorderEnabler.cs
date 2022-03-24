@@ -6,7 +6,7 @@ public class BorderEnabler : MonoBehaviour
 {
     void Update()
     {
-        if (!GetComponent<BoxCollider2D>().enabled && Fairy.movingStates != 'd')
+        if (!GetComponent<BoxCollider2D>().enabled && !GameManager.isChangingDirection)
         {
             GetComponent<BoxCollider2D>().enabled = true;
         }
