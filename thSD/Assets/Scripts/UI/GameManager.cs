@@ -107,7 +107,6 @@ public class GameManager : MonoBehaviour
 
         isChangingDirection = true;
         char prev = Fairy.movingStates;
-        Debug.Log(prev);
         Fairy.movingStates = 'd';
 
         foreach (GameObject fairy in GameObject.FindGameObjectsWithTag("Fairy"))
@@ -117,6 +116,13 @@ public class GameManager : MonoBehaviour
 
         if (prev == 'r') Fairy.movingStates = 'l';
         else if (prev == 'l') Fairy.movingStates = 'r';
+
+        Invoke("notChangingDirection", 1f);
+    }
+
+    public void notChangingDirection()
+    {
+        isChangingDirection = false;
     }
 
     public void bumpUp()

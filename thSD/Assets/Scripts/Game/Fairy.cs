@@ -79,8 +79,9 @@ public class Fairy : MonoBehaviour
     {
         if (other.CompareTag("FairyBorder"))
         {
+            if(!GameManager.isChangingDirection) 
+                StartCoroutine(temporaryInactive(other.GetComponent<BoxCollider2D>()));
             _gm.moveDown();
-            StartCoroutine(temporaryInactive(other.GetComponent<BoxCollider2D>()));
         }
         if (other.CompareTag("KillBorder"))
         {
