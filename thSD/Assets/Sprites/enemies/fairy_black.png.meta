@@ -1,0 +1,1702 @@
+fileFormatVersion: 2
+guid: 31c9ee94247a7324199a3d73829fd55d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 585855672698034694
+    second: fairy_black_0
+  - first:
+      213: 8688018561860961287
+    second: fairy_black_1
+  - first:
+      213: -683320114431938443
+    second: fairy_black_2
+  - first:
+      213: -4218486816644988546
+    second: fairy_black_3
+  - first:
+      213: 7958241613025462654
+    second: fairy_black_4
+  - first:
+      213: -541623293227387750
+    second: fairy_black_5
+  - first:
+      213: -5247978461875351705
+    second: fairy_black_6
+  - first:
+      213: -8071092702849130769
+    second: fairy_black_7
+  - first:
+      213: -7969777176903219131
+    second: fairy_black_8
+  - first:
+      213: 6853204462930626400
+    second: fairy_black_9
+  - first:
+      213: -4135889505444407693
+    second: fairy_black_10
+  - first:
+      213: 3585515622032669421
+    second: fairy_black_11
+  - first:
+      213: 4844168542583231454
+    second: fairy_black_12
+  - first:
+      213: 8188797959031975700
+    second: fairy_black_13
+  - first:
+      213: 8620760270397557651
+    second: fairy_black_14
+  - first:
+      213: 4035604636157255262
+    second: fairy_black_15
+  - first:
+      213: 8501199603248978355
+    second: fairy_black_16
+  - first:
+      213: -5592702545511347123
+    second: fairy_black_17
+  - first:
+      213: -2017137938915308607
+    second: fairy_black_18
+  - first:
+      213: -5340874291321884109
+    second: fairy_black_19
+  - first:
+      213: 217897887163425950
+    second: fairy_black_20
+  - first:
+      213: 2640938892788261493
+    second: fairy_black_21
+  - first:
+      213: 7982521148633607700
+    second: fairy_black_22
+  - first:
+      213: 3045346075848326625
+    second: fairy_black_23
+  - first:
+      213: -439727252238497707
+    second: fairy_black_24
+  - first:
+      213: -6846560381578529974
+    second: fairy_black_25
+  - first:
+      213: -5803857575803012374
+    second: fairy_black_26
+  - first:
+      213: -8983346224568518766
+    second: fairy_black_27
+  - first:
+      213: -4783536937858068234
+    second: fairy_black_28
+  - first:
+      213: -2741913894452716166
+    second: fairy_black_29
+  - first:
+      213: -6003774467604683168
+    second: fairy_black_30
+  - first:
+      213: -919251083384339210
+    second: fairy_black_31
+  - first:
+      213: -907784145406892900
+    second: fairy_black_32
+  - first:
+      213: -6541067182827798646
+    second: fairy_black_33
+  - first:
+      213: -1566151488173486991
+    second: fairy_black_34
+  - first:
+      213: 4297797957554994909
+    second: fairy_black_35
+  - first:
+      213: 1123609133230312818
+    second: fairy_black_36
+  - first:
+      213: 8441106116232434108
+    second: fairy_black_37
+  - first:
+      213: 513582928686006803
+    second: fairy_black_38
+  - first:
+      213: 4410048756642343135
+    second: fairy_black_39
+  - first:
+      213: -1973032201939683260
+    second: fairy_black_40
+  - first:
+      213: -7683910833440602246
+    second: fairy_black_41
+  - first:
+      213: -7203546032168591900
+    second: fairy_black_42
+  - first:
+      213: -5918220386734756454
+    second: fairy_black_43
+  - first:
+      213: 5233132847147012374
+    second: fairy_black_44
+  - first:
+      213: 6641205006275698513
+    second: fairy_black_45
+  - first:
+      213: 1677499423600940069
+    second: fairy_black_46
+  - first:
+      213: -7094312915652365841
+    second: fairy_black_47
+  - first:
+      213: -5644190516468090356
+    second: fairy_black_48
+  - first:
+      213: -7408083590085065369
+    second: fairy_black_49
+  - first:
+      213: -8683540288258540295
+    second: fairy_black_50
+  - first:
+      213: 6430891070880773422
+    second: fairy_black_51
+  - first:
+      213: -8468885354519264092
+    second: fairy_black_52
+  - first:
+      213: -1795143365917697245
+    second: fairy_black_53
+  - first:
+      213: -8548649338993399163
+    second: fairy_black_54
+  - first:
+      213: -5552279120545846733
+    second: fairy_black_55
+  - first:
+      213: 5043152489991296103
+    second: fairy_black_56
+  - first:
+      213: 1249760763674213843
+    second: fairy_black_57
+  - first:
+      213: -2081368065459580552
+    second: fairy_black_58
+  - first:
+      213: 8303051739930034934
+    second: fairy_black_59
+  - first:
+      213: -5789616708395276884
+    second: fairy_black_60
+  - first:
+      213: -7878979165371248158
+    second: fairy_black_61
+  - first:
+      213: -8647130392121527185
+    second: fairy_black_62
+  - first:
+      213: 1752542502693175368
+    second: fairy_black_63
+  - first:
+      213: 7337134281446493925
+    second: fairy_black_64
+  - first:
+      213: -1070643733900154205
+    second: fairy_black_65
+  - first:
+      213: -1498237738206735480
+    second: fairy_black_66
+  - first:
+      213: -6827429910798835407
+    second: fairy_black_67
+  - first:
+      213: -6417010704481678359
+    second: fairy_black_68
+  - first:
+      213: -4546343608065106290
+    second: fairy_black_69
+  - first:
+      213: 3754463971299390001
+    second: fairy_black_70
+  - first:
+      213: 737822196521800650
+    second: fairy_black_71
+  - first:
+      213: -5709001127975639149
+    second: fairy_black_72
+  - first:
+      213: 4086850863547795045
+    second: fairy_black_73
+  - first:
+      213: 8631499129449878167
+    second: fairy_black_74
+  - first:
+      213: 7018414354971943984
+    second: fairy_black_75
+  - first:
+      213: 5485608076388866030
+    second: fairy_black_76
+  - first:
+      213: -7550993852335418094
+    second: fairy_black_77
+  - first:
+      213: 3286864272993465977
+    second: fairy_black_78
+  - first:
+      213: -6732936995322975551
+    second: fairy_black_79
+  - first:
+      213: -7882553198525880641
+    second: fairy_black_80
+  - first:
+      213: 3064526858226778143
+    second: fairy_black_81
+  - first:
+      213: -4988482200144482400
+    second: fairy_black_82
+  - first:
+      213: -6639768841202779874
+    second: fairy_black_83
+  - first:
+      213: 3905033944220823419
+    second: fairy_black_84
+  - first:
+      213: -8499165398165368985
+    second: fairy_black_85
+  - first:
+      213: 7165516941192460568
+    second: fairy_black_86
+  - first:
+      213: 4584012411401067808
+    second: fairy_black_87
+  - first:
+      213: -5468967625757744107
+    second: fairy_black_88
+  - first:
+      213: -6363763051382924651
+    second: fairy_black_89
+  - first:
+      213: -5104634196350527637
+    second: fairy_black_90
+  - first:
+      213: -1240742931201088039
+    second: fairy_black_91
+  - first:
+      213: 6413572246400406658
+    second: fairy_black_92
+  - first:
+      213: 1484870809335725950
+    second: fairy_black_93
+  - first:
+      213: -2161848287060823651
+    second: fairy_black_94
+  - first:
+      213: 2684088584133506633
+    second: fairy_black_95
+  - first:
+      213: 1763654385616091270
+    second: fairy_black_96
+  - first:
+      213: -3507547289777308724
+    second: fairy_black_97
+  - first:
+      213: -3227195777937398499
+    second: fairy_black_98
+  - first:
+      213: -8229734684260590071
+    second: fairy_black_99
+  - first:
+      213: -3919492366927021318
+    second: fairy_black_100
+  - first:
+      213: 2246328819284926867
+    second: fairy_black_101
+  - first:
+      213: -7528578284780808426
+    second: fairy_black_102
+  - first:
+      213: 7772773291381691130
+    second: fairy_black_103
+  - first:
+      213: -4274444267380017516
+    second: fairy_black_104
+  - first:
+      213: -1645182152023404106
+    second: fairy_black_105
+  - first:
+      213: -2869234533700739398
+    second: fairy_black_106
+  - first:
+      213: 2589649097985183652
+    second: fairy_black_107
+  - first:
+      213: -6198064645413764131
+    second: fairy_black_108
+  - first:
+      213: 8750661324586419658
+    second: fairy_black_109
+  - first:
+      213: -1486586990225427727
+    second: fairy_black_110
+  - first:
+      213: -3423763869237796564
+    second: fairy_black_111
+  - first:
+      213: 4916769026654377652
+    second: fairy_black_112
+  - first:
+      213: 9192545961271835363
+    second: fairy_black_113
+  - first:
+      213: 4414385392542665749
+    second: fairy_black_114
+  - first:
+      213: 3020345189524907822
+    second: fairy_black_115
+  - first:
+      213: -5366451807426338246
+    second: fairy_black_116
+  - first:
+      213: 2728609964188887272
+    second: fairy_black_117
+  - first:
+      213: 612033266807917795
+    second: fairy_black_118
+  - first:
+      213: -6433778280111100325
+    second: fairy_black_119
+  - first:
+      213: -8488403273177548504
+    second: fairy_black_120
+  - first:
+      213: 10979798056853981
+    second: fairy_black_121
+  - first:
+      213: -1013297594158266762
+    second: fairy_black_122
+  - first:
+      213: -863581704837666898
+    second: fairy_black_123
+  - first:
+      213: 2234393567174265244
+    second: fairy_black_124
+  - first:
+      213: -3634634999951320345
+    second: fairy_black_125
+  - first:
+      213: 8581986860327669829
+    second: fairy_black_126
+  - first:
+      213: -695047606968618118
+    second: fairy_black_127
+  - first:
+      213: 1791673829672275664
+    second: fairy_black_128
+  - first:
+      213: 7106487285606583432
+    second: fairy_black_129
+  - first:
+      213: 5704353299270300962
+    second: fairy_black_130
+  - first:
+      213: 4732106675999599940
+    second: fairy_black_131
+  - first:
+      213: 2843209775878520965
+    second: fairy_black_132
+  - first:
+      213: 3008683744812563471
+    second: fairy_black_133
+  - first:
+      213: 8572371770878689760
+    second: fairy_black_134
+  - first:
+      213: 211997526632771056
+    second: fairy_black_135
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fairy_black_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a50dc51a0612800800000000000000
+      internalID: 585855672698034694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70409b5d9da029870800000000000000
+      internalID: 8688018561860961287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570b76fe9fb5486f0800000000000000
+      internalID: -683320114431938443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 482
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71053c379ce475c0800000000000000
+      internalID: -4218486816644988546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e794d1d159a517e60800000000000000
+      internalID: 7958241613025462654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94ba150c74cb78f0800000000000000
+      internalID: -541623293227387750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fc407d46f6b27b0800000000000000
+      internalID: -5247978461875351705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee1e6103f7bdff80800000000000000
+      internalID: -8071092702849130769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5480baf12e9a56190800000000000000
+      internalID: -7969777176903219131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0670a1236297b1f50800000000000000
+      internalID: 6853204462930626400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 482
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37658bd586e5a96c0800000000000000
+      internalID: -4135889505444407693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deafedb167f42c130800000000000000
+      internalID: 3585515622032669421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed39bccbf91f93340800000000000000
+      internalID: 4844168542583231454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f6b8d8b5474a170800000000000000
+      internalID: 8188797959031975700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 440
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bc8da8ac713a770800000000000000
+      internalID: 8620760270397557651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_15
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 440
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e9218f809510830800000000000000
+      internalID: 4035604636157255262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 440
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9d8547ff35af570800000000000000
+      internalID: 8501199603248978355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_17
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 440
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c8f509aaab262b0800000000000000
+      internalID: -5592702545511347123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_18
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 440
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb4df75bbfa104e0800000000000000
+      internalID: -2017137938915308607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_19
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 440
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3323eb3112761e5b0800000000000000
+      internalID: -5340874291321884109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 440
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e942fa159f0260300800000000000000
+      internalID: 217897887163425950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 392
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57268224eef76a420800000000000000
+      internalID: 2640938892788261493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_22
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 392
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e695401bc97ce60800000000000000
+      internalID: 7982521148633607700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 392
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edb11dfe1e334a20800000000000000
+      internalID: 3045346075848326625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_24
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 392
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5580444d466c5e9f0800000000000000
+      internalID: -439727252238497707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_25
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 392
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43bfba8b912cf0a0800000000000000
+      internalID: -6846560381578529974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_26
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 392
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea3d43f84e847fa0800000000000000
+      internalID: -5803857575803012374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2973f3e543eb45380800000000000000
+      internalID: -8983346224568518766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 343
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f09201df767d9db0800000000000000
+      internalID: -4783536937858068234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_29
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 345
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d107c17d3c2f9d0800000000000000
+      internalID: -2741913894452716166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_30
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 343
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066ecda5eee4eaca0800000000000000
+      internalID: -6003774467604683168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 343
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4cb73920a2e33f0800000000000000
+      internalID: -919251083384339210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_32
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 342
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c946a402127e663f0800000000000000
+      internalID: -907784145406892900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 341
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f7593ad067935a0800000000000000
+      internalID: -6541067182827798646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_34
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 343
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c48f2f489e34ae0800000000000000
+      internalID: -1566151488173486991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 295
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddef670c878d4ab30800000000000000
+      internalID: 4297797957554994909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_36
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 297
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dc394bd8cd79f00800000000000000
+      internalID: 1123609133230312818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_37
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 295
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb159613a45d42570800000000000000
+      internalID: 8441106116232434108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_38
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 295
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312c80bd3fc902700800000000000000
+      internalID: 513582928686006803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_39
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 294
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8e1dd8af3a33d30800000000000000
+      internalID: 4410048756642343135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_40
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 293
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4487af87aa16e94e0800000000000000
+      internalID: -1973032201939683260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_41
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 295
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a774ffedec34d5590800000000000000
+      internalID: -7683910833440602246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 236
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed9a6dbc0dd70c90800000000000000
+      internalID: -7203546032168591900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_43
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 240
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d23321ae14edda0800000000000000
+      internalID: -5918220386734756454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 240
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61150a02992df9840800000000000000
+      internalID: 5233132847147012374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_45
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 235
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fdb9f34cc4a2c50800000000000000
+      internalID: 6641205006275698513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_46
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 236
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52418a686dca74710800000000000000
+      internalID: 1677499423600940069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_47
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 235
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe133119dffeb8d90800000000000000
+      internalID: -7094312915652365841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_48
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 235
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a7a4521aecba1b0800000000000000
+      internalID: -5644190516468090356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 172
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765449a7933313990800000000000000
+      internalID: -7408083590085065369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 176
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc7e8d7d1edd7780800000000000000
+      internalID: -8683540288258540295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_51
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 176
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25741d4b5d1f3950800000000000000
+      internalID: 6430891070880773422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_52
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 171
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a40f50e3a9787a80800000000000000
+      internalID: -8468885354519264092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_53
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 172
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b9399ae9e5617e0800000000000000
+      internalID: -1795143365917697245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_54
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 171
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58aabe708b81d5980800000000000000
+      internalID: -8548649338993399163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_black_55
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 171
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33aeb0e9e8752f2b0800000000000000
+      internalID: -5552279120545846733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

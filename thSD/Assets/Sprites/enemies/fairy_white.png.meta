@@ -1,0 +1,1462 @@
+fileFormatVersion: 2
+guid: 0726e45cac9a76a4e941792615478a98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6704345245807431547
+    second: fairy_white_0
+  - first:
+      213: -8699690804043388257
+    second: fairy_white_1
+  - first:
+      213: -8413421338951869722
+    second: fairy_white_2
+  - first:
+      213: 7826180775107308616
+    second: fairy_white_3
+  - first:
+      213: -5239521902082450927
+    second: fairy_white_4
+  - first:
+      213: 4472047587926376980
+    second: fairy_white_5
+  - first:
+      213: 3651611111175397671
+    second: fairy_white_6
+  - first:
+      213: 7254020086920368796
+    second: fairy_white_7
+  - first:
+      213: 6752336975338438760
+    second: fairy_white_8
+  - first:
+      213: -9191450695815153074
+    second: fairy_white_9
+  - first:
+      213: 7195878136226715110
+    second: fairy_white_10
+  - first:
+      213: 634659713804425581
+    second: fairy_white_11
+  - first:
+      213: -5013099533149225714
+    second: fairy_white_12
+  - first:
+      213: 6505786837155687773
+    second: fairy_white_13
+  - first:
+      213: -2387152207273574653
+    second: fairy_white_14
+  - first:
+      213: 1166250012652054863
+    second: fairy_white_15
+  - first:
+      213: 6052663786154437462
+    second: fairy_white_16
+  - first:
+      213: -2715887288806853966
+    second: fairy_white_17
+  - first:
+      213: 1134133292640180434
+    second: fairy_white_18
+  - first:
+      213: -8152894703103829680
+    second: fairy_white_19
+  - first:
+      213: 3373499371703331194
+    second: fairy_white_20
+  - first:
+      213: 2778489671337208222
+    second: fairy_white_21
+  - first:
+      213: 146861121703182116
+    second: fairy_white_22
+  - first:
+      213: -8237886481443468213
+    second: fairy_white_23
+  - first:
+      213: -7272906377879474103
+    second: fairy_white_24
+  - first:
+      213: 4004935697769457883
+    second: fairy_white_25
+  - first:
+      213: 5077119831152316199
+    second: fairy_white_26
+  - first:
+      213: -4399066187593110705
+    second: fairy_white_27
+  - first:
+      213: -9209937532907841152
+    second: fairy_white_28
+  - first:
+      213: 5016532025161486864
+    second: fairy_white_29
+  - first:
+      213: -1720133293329649905
+    second: fairy_white_30
+  - first:
+      213: -5211505564673065326
+    second: fairy_white_31
+  - first:
+      213: 2215872846573150051
+    second: fairy_white_32
+  - first:
+      213: 3076552054837724162
+    second: fairy_white_33
+  - first:
+      213: -686053343656900725
+    second: fairy_white_34
+  - first:
+      213: 3997376900009132483
+    second: fairy_white_35
+  - first:
+      213: -2347004535827124071
+    second: fairy_white_36
+  - first:
+      213: 3933971813701006506
+    second: fairy_white_37
+  - first:
+      213: 2661927821419082610
+    second: fairy_white_38
+  - first:
+      213: -5357302441338156698
+    second: fairy_white_39
+  - first:
+      213: 1988307323868119162
+    second: fairy_white_40
+  - first:
+      213: 1104157398939591221
+    second: fairy_white_41
+  - first:
+      213: 2404565664573091005
+    second: fairy_white_42
+  - first:
+      213: -3725241885862154099
+    second: fairy_white_43
+  - first:
+      213: -7114430357708074525
+    second: fairy_white_44
+  - first:
+      213: 4310285147083588640
+    second: fairy_white_45
+  - first:
+      213: 2144691640064195858
+    second: fairy_white_46
+  - first:
+      213: 5181507750455179178
+    second: fairy_white_47
+  - first:
+      213: 7720027132246590661
+    second: fairy_white_48
+  - first:
+      213: 8999888700880572893
+    second: fairy_white_49
+  - first:
+      213: -5136915446858512963
+    second: fairy_white_50
+  - first:
+      213: 7734059068501393123
+    second: fairy_white_51
+  - first:
+      213: 7599946185028392249
+    second: fairy_white_52
+  - first:
+      213: 5748856188502262887
+    second: fairy_white_53
+  - first:
+      213: 7465523117529610304
+    second: fairy_white_54
+  - first:
+      213: -7156294474237947129
+    second: fairy_white_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fairy_white_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f4eebda7e9a0d50800000000000000
+      internalID: 6704345245807431547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ae2418e4d744780800000000000000
+      internalID: -8699690804043388257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea15125ed58d3b80800000000000000
+      internalID: -8413421338951869722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 482
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c234833fd2c9c60800000000000000
+      internalID: 7826180775107308616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a1f79179a7947b0800000000000000
+      internalID: -5239521902082450927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4128ef85697ef0e30800000000000000
+      internalID: 4472047587926376980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721aa7365f02da230800000000000000
+      internalID: 3651611111175397671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92df6ae5d47ba460800000000000000
+      internalID: 7254020086920368796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86088c224be15bd50800000000000000
+      internalID: 6752336975338438760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 482
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4abb616a48617080800000000000000
+      internalID: -9191450695815153074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 482
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e51bcc1a05ecd360800000000000000
+      internalID: 7195878136226715110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69509aa5a3cec800800000000000000
+      internalID: 634659713804425581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0db6fef884ed6ab0800000000000000
+      internalID: -5013099533149225714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 482
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5da315c8a2394a50800000000000000
+      internalID: 6505786837155687773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 440
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3ba417b12fded0800000000000000
+      internalID: -2387152207273574653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_15
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 440
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49ab6b153a5f2010800000000000000
+      internalID: 1166250012652054863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 440
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b2b9625a16ff350800000000000000
+      internalID: 6052663786154437462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_17
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 440
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b23ba476ea3f4ad0800000000000000
+      internalID: -2715887288806853966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_18
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 440
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d813c388304dbf00800000000000000
+      internalID: 1134133292640180434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_19
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 440
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0591552a6791bde80800000000000000
+      internalID: -8152894703103829680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 440
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7961641ec311de20800000000000000
+      internalID: 3373499371703331194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 392
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99652092ad2f8620800000000000000
+      internalID: 2778489671337208222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_22
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 392
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ffe6e7961c90200800000000000000
+      internalID: 146861121703182116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 392
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cc19d24e52dad80800000000000000
+      internalID: -8237886481443468213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_24
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 392
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94032ddce22711b90800000000000000
+      internalID: -7272906377879474103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_25
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 392
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd864dd4cc3649730800000000000000
+      internalID: 4004935697769457883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_26
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 392
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fcce1369d857640800000000000000
+      internalID: 5077119831152316199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ba4111c9063f2c0800000000000000
+      internalID: -4399066187593110705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 343
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0899d733c9abf2080800000000000000
+      internalID: -9209937532907841152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_29
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 345
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0121f145c4d4e9540800000000000000
+      internalID: 5016532025161486864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_30
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 343
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f63c422ebd028e0800000000000000
+      internalID: -1720133293329649905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 343
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29eb0b8fc430da7b0800000000000000
+      internalID: -5211505564673065326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_32
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 342
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f1d6f1d9c50ce10800000000000000
+      internalID: 2215872846573150051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 341
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204c9992bcb12ba20800000000000000
+      internalID: 3076552054837724162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_34
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 343
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b878c5a6e16aa76f0800000000000000
+      internalID: -686053343656900725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 295
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1856e8c19897730800000000000000
+      internalID: 3997376900009132483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_36
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 297
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9903bc34fc3cd6fd0800000000000000
+      internalID: -2347004535827124071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_37
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 295
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa43c008586489630800000000000000
+      internalID: 3933971813701006506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_38
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 295
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273f965004111f420800000000000000
+      internalID: 2661927821419082610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_39
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 294
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669c4b550d907a5b0800000000000000
+      internalID: -5357302441338156698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_40
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 293
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70877ff9f2e79b10800000000000000
+      internalID: 1988307323868119162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_41
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 295
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532e9e3ed41c25f00800000000000000
+      internalID: 1104157398939591221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 236
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbceaf36bbbbe5120800000000000000
+      internalID: 2404565664573091005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_43
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 240
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80b7c2fd384d4cc0800000000000000
+      internalID: -3725241885862154099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 240
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e11e859847744d90800000000000000
+      internalID: -7114430357708074525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_45
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 235
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0244f80218531db30800000000000000
+      internalID: 4310285147083588640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_46
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 236
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21db6cefea973cd10800000000000000
+      internalID: 2144691640064195858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_47
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 235
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa770d2a8d968e740800000000000000
+      internalID: 5181507750455179178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_48
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 235
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c48fe936cb032b60800000000000000
+      internalID: 7720027132246590661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 172
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1d90a071706ec70800000000000000
+      internalID: 8999888700880572893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 176
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db508cc1e9206b8b0800000000000000
+      internalID: -5136915446858512963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_51
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 176
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eef9e9feb5e45b60800000000000000
+      internalID: 7734059068501393123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_52
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 171
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935d3bef9ce687960800000000000000
+      internalID: 7599946185028392249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_53
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 172
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764cb74ae3a08cf40800000000000000
+      internalID: 5748856188502262887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_54
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 171
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048b1daa8bdda9760800000000000000
+      internalID: 7465523117529610304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_white_55
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 171
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703d4f2671cbfac90800000000000000
+      internalID: -7156294474237947129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
