@@ -10,6 +10,8 @@ public class MotherFairy : MonoBehaviour
     private MotherFairyPool _pool;
     private int HP = 3;
 
+    private GameManager _gm;
+
     private AudioSource _as;
     public AudioClip _deathSound;
 
@@ -22,6 +24,7 @@ public class MotherFairy : MonoBehaviour
     {
         _pool = GameObject.FindGameObjectWithTag("MotherFairyPool").GetComponent<MotherFairyPool>();
         _as = this.GetComponent<AudioSource>();
+        _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Start is called before the first frame update
@@ -87,6 +90,7 @@ public class MotherFairy : MonoBehaviour
 
         this.gameObject.GetComponent<SpriteRenderer>().DOColor(Color.clear, 0.25f).OnComplete(() => {
             _pool.returnMotherFairyToPool(this.gameObject);
+            _gm.addScore(100);
         }); 
     }
 }

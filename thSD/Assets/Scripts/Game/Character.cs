@@ -103,7 +103,11 @@ public class Character : MonoBehaviour
         {
             isDead = true;
             _gm.setLives(_gm.getLives() - 1);
-            Invoke("Respawn", 3f);
+
+            if (_gm.getLives() >= 0) 
+                Invoke("Respawn", 3f);
+            else 
+                _gm.setGameOverText();
         }
     }
 

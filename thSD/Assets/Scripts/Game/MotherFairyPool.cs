@@ -20,10 +20,12 @@ public class MotherFairyPool : MonoBehaviour
         return motherFairyInstance;
     }
 
-    public GameObject InstantiateNewMotherFairy(char dir)
+    public GameObject InstantiateNewMotherFairy(char dir, float height = 2.59f, float moveSpeed = 0.025f)
     {
         GameObject motherFairyInstance = GetNewMotherFairy(dir);
         motherFairyInstance.SetActive(true);
+        motherFairyInstance.transform.position = new Vector3(motherFairyInstance.transform.position.x, height, 0);
+        motherFairyInstance.GetComponent<MotherFairy>().moveSpeed = moveSpeed;
         return motherFairyInstance;
     }
 
