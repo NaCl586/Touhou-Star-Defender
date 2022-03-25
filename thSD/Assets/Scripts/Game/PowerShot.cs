@@ -66,6 +66,10 @@ public class PowerShot : MonoBehaviour
             other.GetComponent<Fairy>().FairyDeath();
             if (type != "f") StartCoroutine(switchState(0.125f));
         }
+        else if (other.CompareTag("MotherFairy"))
+        {
+            other.GetComponent<MotherFairy>().MFDeath();
+        }
     }
 
     IEnumerator switchState(float delay)

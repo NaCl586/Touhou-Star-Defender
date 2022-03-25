@@ -44,7 +44,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += dir * bulletSpeed;
+        transform.position += dir * bulletSpeed * GameManager.speedMultiplier;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -56,9 +56,17 @@ public class Bullet : MonoBehaviour
         else if (other.CompareTag("Player"))
         {
             if (other.transform.parent.gameObject.GetComponent<Character>().isInvincible) return;
-            other.transform.parent.gameObject.GetComponent<Character>().Death();
-            foreach (GameObject fairy in GameObject.FindGameObjectsWithTag("Fairy"))
-                fairy.transform.DOMove(fairy.transform.position + Vector3.up * 0.75f, 1f);
+
+            if (!Character.isShielded)
+            {
+                other.transform.parent.gameObject.GetComponent<Character>().Death();
+                foreach (GameObject fairy in GameObject.FindGameObjectsWithTag("Fairy"))
+                    fairy.transform.DOMove(fairy.transform.position + Vector3.up * 0.75f, 1f);
+            }
+            else
+            {
+                other.transform.parent.gameObject.GetComponent<Character>().deactivateShield();
+            }
         }
     }
 }

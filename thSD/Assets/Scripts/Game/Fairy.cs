@@ -40,9 +40,9 @@ public class Fairy : MonoBehaviour
     void FixedUpdate()
     {
         if (movingStates == 'r')
-            transform.position += Vector3.right * moveSpeed;
+            transform.position += Vector3.right * moveSpeed * GameManager.speedMultiplier;
         else if(movingStates == 'l')
-            transform.position += Vector3.left * moveSpeed;
+            transform.position += Vector3.left * moveSpeed * GameManager.speedMultiplier;
 
         if (_dpInstance) _dpInstance.transform.position = transform.position;
     }

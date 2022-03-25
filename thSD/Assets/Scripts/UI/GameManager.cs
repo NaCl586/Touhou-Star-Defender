@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool isBonusRound = false;
+    public bool isBossRound = false;
+
     public Text score;
     public Text levelName;
     public Text lives;
@@ -38,8 +41,11 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public List<Fairy> fairies = new List<Fairy>();
     private int initFairyCount;
     private Character character;
+    private MotherFairyPool _mfPool;
 
     public static bool isChangingDirection = false;
+    public static float speedMultiplier = 1f;
+    public static float shootFrequency = 0.25f;
 
     public void setLives(int live) { 
         _lives = live;
@@ -86,6 +92,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         character = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
+        _mfPool = GameObject.FindGameObjectWithTag("MotherFairyPool").GetComponent<MotherFairyPool>();
 
         score.text = _currentScore.ToString();
         levelName.text = SceneManager.GetActiveScene().name;
@@ -99,6 +106,7 @@ public class GameManager : MonoBehaviour
 
         initFairyCount = fairies.Count;
         StartCoroutine(FairyShoot(2f));
+        StartCoroutine(SpawnMotherFairy(Random.Range(5f, 15f)));
     }
 
     public void moveDown()
@@ -129,15 +137,56 @@ public class GameManager : MonoBehaviour
     {
         character.Death();
         foreach (GameObject fairy in GameObject.FindGameObjectsWithTag("Fairy"))
-            fairy.transform.DOMove(fairy.transform.position + Vector3.up * 0.375f, 1f);
+            fairy.transform.DOMove(fairy.transform.position + Vector3.up * 0.25f, 1f);
     }
 
     private bool checkForBullet = false;
     private GameObject[] leftoverBullets;
     private GameObject[] leftoverItems;
+    private GameObject[] leftoverMotherFairy;
+
+    public Slider timeSlowSlider;
+    public Slider doubleShotSlider;
+
+    public static bool timeSlowisActive;
+    public static float timeSlowStartTime;
+    public static bool doubleShotisActive;
+    public static float doubleShotStartTime;
 
     public void Update()
     {
+        if (timeSlowisActive && (Time.time - timeSlowStartTime) >= 10)
+        {
+            timeSlowisActive = false;
+            timeSlowSlider.gameObject.SetActive(false);
+            speedMultiplier = 1f;
+        }
+        else if (timeSlowisActive)
+        {
+            timeSlowSlider.value = (Time.time - timeSlowStartTime) / 10;
+            speedMultiplier = 0.25f;
+        }
+        else
+        {
+            timeSlowSlider.gameObject.SetActive(false);
+        }
+
+        if (doubleShotisActive && (Time.time - doubleShotStartTime) >= 10)
+        {
+            doubleShotisActive = false;
+            doubleShotSlider.gameObject.SetActive(false);
+            shootFrequency = 0.25f;
+        }
+        else if (doubleShotisActive)
+        {
+            doubleShotSlider.value = (Time.time - doubleShotStartTime) / 10;
+            shootFrequency = 0.125f;
+        }
+        else
+        {
+            doubleShotSlider.gameObject.SetActive(false);
+        }
+
         if (fairies.Count <= 5)
             Fairy.moveSpeed = 0.0125f * 2;
         else if (fairies.Count <= 10)
@@ -152,6 +201,7 @@ public class GameManager : MonoBehaviour
                 checkForBullet = true;
                 leftoverBullets = GameObject.FindGameObjectsWithTag("Bullet");
                 leftoverItems = GameObject.FindGameObjectsWithTag("Item");
+                leftoverMotherFairy = GameObject.FindGameObjectsWithTag("MotherFairy");
             }
             else
             {
@@ -172,18 +222,29 @@ public class GameManager : MonoBehaviour
                         break;
                     }
                 }
-                if (flag == true)
+                foreach (GameObject mf in leftoverMotherFairy)
                 {
-                    StartCoroutine(LoadAsycncronously(SceneManager.GetActiveScene().buildIndex + 1));
+                    if (mf.activeSelf == true)
+                    {
+                        flag = false;
+                        break;
+                    }
                 }
+                if (flag == true && GameObject.FindGameObjectWithTag("MFItem")) flag = false;
+
+                if (flag == true)
+                    StartCoroutine(LoadAsycncronously(SceneManager.GetActiveScene().buildIndex + 1, 1f));
             }
         }
     }
 
-    IEnumerator LoadAsycncronously(int sceneIndex)
+    IEnumerator LoadAsycncronously(int sceneIndex, float delay)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         loadingScreen.SetActive(true);
+        yield return new WaitForSeconds(delay);
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        
         while (!operation.isDone)
         {
             yield return null;
@@ -202,6 +263,17 @@ public class GameManager : MonoBehaviour
 
             fairies[Random.Range(0, fairies.Count - 1)].Attack();
             yield return new WaitForSeconds(Random.Range(1f,upperBound));
+        }
+    }
+
+    IEnumerator SpawnMotherFairy(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        while (fairies.Count > 0)
+        {
+            char dir = Random.Range(1, 100) % 2 == 0 ? 'l' : 'r';
+            _mfPool.InstantiateNewMotherFairy(dir);
+            yield return new WaitForSeconds(Random.Range(10f, 20f));
         }
     }
 

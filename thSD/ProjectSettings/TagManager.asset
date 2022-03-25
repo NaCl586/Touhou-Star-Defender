@@ -15,6 +15,9 @@ TagManager:
   - ItemCollector
   - Bullet
   - Item
+  - MotherFairy
+  - MotherFairyPool
+  - MFItem
   layers:
   - Default
   - TransparentFX

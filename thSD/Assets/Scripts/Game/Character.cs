@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
 {
     public SpriteRenderer hitbox_front;
     public SpriteRenderer hitbox_back;
+    public SpriteRenderer shield;
     private SpriteRenderer _character;
 
     public float rotationHitbox = 30f;
@@ -18,6 +19,9 @@ public class Character : MonoBehaviour
     public AudioClip shootSound;
     public AudioClip deathSound;
     public AudioClip powerupSound;
+
+    public AudioClip shieldActive;
+    public AudioClip shieldBreak;
 
     private AudioSource _audioSource;
     private float _lastShootTime;
@@ -31,6 +35,9 @@ public class Character : MonoBehaviour
     public List<GameObject> powerupList = new List<GameObject>();
 
     private Vector3 _initPos;
+
+    public static bool isShielded = false;
+
     void Start()
     {
         _initPos = transform.position;
@@ -39,12 +46,33 @@ public class Character : MonoBehaviour
         _audioSource = this.GetComponent<AudioSource>();
         _poolManager = GameObject.FindGameObjectWithTag("ShotPool").GetComponent<ShotPool>();
         Respawn();
+
+        shield.color = isShielded ? Color.white : Color.clear;
     }
 
     private void Update()
     {
         hitbox_front.gameObject.transform.Rotate(new Vector3(0, 0, Time.deltaTime * rotationHitbox));
         hitbox_back.gameObject.transform.Rotate(new Vector3(0, 0, -1 * Time.deltaTime * rotationHitbox));
+        shield.gameObject.transform.Rotate(new Vector3(0, 0, Time.deltaTime * rotationHitbox));
+    }
+
+    public void activateShield()
+    {
+        isShielded = true;
+        shield.DOColor(Color.white, 0.25f);
+        _audioSource.PlayOneShot(shieldActive);
+    }
+
+    public void deactivateShield()
+    {
+        isShielded = false;
+        shield.DOColor(Color.clear, 0.25f);
+        _audioSource.PlayOneShot(shieldBreak);
+
+        isInvincible = true;
+        StartCoroutine(invincibleFade());
+        Invoke("removeInvincibility", 3f);
     }
 
     public void Respawn()
@@ -130,10 +158,10 @@ public class Character : MonoBehaviour
                 _character.flipX = true;
             }
             else animator.SetBool("isMoving", false);
-        } 
+        }
 
         //shoot
-        if(Input.GetKey(KeyCode.Z) && (Time.time - _lastShootTime > 0.25f))
+        if (Input.GetKey(KeyCode.Z) && (Time.time - _lastShootTime > GameManager.shootFrequency))
         {
             _lastShootTime = Time.time;
             _poolManager.InstantiateNewBullet();

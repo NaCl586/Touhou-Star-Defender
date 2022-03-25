@@ -28,5 +28,10 @@ public class Shoot : MonoBehaviour
             other.GetComponent<Fairy>().reduceHP();
             _poolManager.returnShootToPool(gameObject);
         }
+        else if (other.CompareTag("MotherFairy"))
+        {
+            other.GetComponent<MotherFairy>().reduceHP();
+            _poolManager.returnShootToPool(gameObject);
+        }
     }
 }
