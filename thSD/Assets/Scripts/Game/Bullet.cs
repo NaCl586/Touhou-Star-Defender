@@ -20,6 +20,11 @@ public class Bullet : MonoBehaviour
         _poolManager = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<BulletPool>();
     }
 
+    public void changeDirection(Vector3 dir)
+    {
+        this.dir = dir;
+    }
+
     void OnEnable()
     {
         if (!homing)

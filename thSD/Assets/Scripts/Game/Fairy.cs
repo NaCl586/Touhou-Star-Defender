@@ -23,13 +23,13 @@ public class Fairy : MonoBehaviour
     void Start()
     {
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        _poolManager = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<BulletPool>();
-        _as = this.GetComponent<AudioSource>();
+        _poolManager = _poolManager = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<BulletPool>();
+        _as = this.gameObject.GetComponent<AudioSource>();
 
         gameObject.name = fairyData._name;
         this.HP = fairyData.HP;
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = fairyData.sprite;
-        this.gameObject.GetComponent<Animator>().runtimeAnimatorController = fairyData.animator;
+        this.GetComponent<SpriteRenderer>().sprite = fairyData.sprite;
+        this.GetComponent<Animator>().runtimeAnimatorController = fairyData.animator;
 
         shotType = fairyData.shotType;
         shotCount = fairyData.shotCount;

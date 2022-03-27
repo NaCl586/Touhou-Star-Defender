@@ -6,24 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level 1-1.unity
+    path: Assets/Scenes/Mission 1/Level 1-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level 1-2.unity
+    path: Assets/Scenes/Mission 1/Level 1-2.unity
     guid: 0d5c9a45e8c14aa4d86815958c7d1259
   - enabled: 1
-    path: Assets/Scenes/Level 1-3.unity
+    path: Assets/Scenes/Mission 1/Level 1-3.unity
     guid: 912af54f434d50a499c44afa8a447cd3
   - enabled: 1
-    path: Assets/Scenes/Level 1-4.unity
+    path: Assets/Scenes/Mission 1/Level 1-4.unity
     guid: c0eaf6795ee19f244a6f28a0d74eeb76
   - enabled: 1
-    path: Assets/Scenes/Level 1-5.unity
+    path: Assets/Scenes/Mission 1/Level 1-5.unity
     guid: 06d076088b5d8d34e80bb813a6ac5280
   - enabled: 1
-    path: Assets/Scenes/Level 1-6.unity
+    path: Assets/Scenes/Mission 1/Level 1-6.unity
     guid: e50708d4adb2d554b8fec068dfd9a1d6
   - enabled: 1
-    path: Assets/Scenes/Level 1-7.unity
+    path: Assets/Scenes/Mission 1/Level 1-7.unity
     guid: aae625f22eb9e274080d269507424ac1
+  - enabled: 1
+    path: Assets/Scenes/Mission 1/Level 1-8.unity
+    guid: ee8833d6b008cce4980be6e902b2f94a
+  - enabled: 1
+    path: Assets/Scenes/Mission 1/Level 1-9.unity
+    guid: 62ebae6534d1b404a9e08dd4e2af035e
+  - enabled: 1
+    path: Assets/Scenes/Mission 1/Level 1-10.unity
+    guid: af8037a6361e724409bfb33d33e226b5
+  - enabled: 1
+    path: Assets/Scenes/Mission 1/Level 1-11.unity
+    guid: fa3d2bb3c1a9cee4499fb92ac074d4ff
+  - enabled: 1
+    path: Assets/Scenes/Mission 1/Level 1-12.unity
+    guid: 26682e3e402d8dd44a6b1afe2e076bfc
   m_configObjects: {}

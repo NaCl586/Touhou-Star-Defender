@@ -47,9 +47,9 @@ public class MotherFairy : MonoBehaviour
     void FixedUpdate()
     {
         if (direction == 'r')
-            transform.position += Vector3.right * moveSpeed;
+            transform.position += Vector3.right * moveSpeed * GameManager.speedMultiplier;
         else if (direction == 'l')
-            transform.position += Vector3.left * moveSpeed;
+            transform.position += Vector3.left * moveSpeed * GameManager.speedMultiplier;
 
         if(Mathf.Abs(transform.position.x) >= 6)
             _pool.returnMotherFairyToPool(this.gameObject);

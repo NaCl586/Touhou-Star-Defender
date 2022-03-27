@@ -5,7 +5,6 @@ using UnityEngine;
 public class BulletPool : MonoBehaviour
 {
     public GameObject bullet;
-
     public Queue<GameObject> shootPool = new Queue<GameObject>();
 
     public GameObject GetNewBullet()

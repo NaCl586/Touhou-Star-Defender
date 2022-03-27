@@ -18,6 +18,7 @@ TagManager:
   - MotherFairy
   - MotherFairyPool
   - MFItem
+  - Boss
   layers:
   - Default
   - TransparentFX

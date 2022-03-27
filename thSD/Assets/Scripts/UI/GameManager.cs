@@ -7,25 +7,12 @@ using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     public bool isBonusRound = false;
     public bool isBossRound = false;
     public int bonusMotherFairy = 17;
 
     public Text gameOverText;
+    public bool isWon;
 
     public Text score;
     public Text levelName;
@@ -59,6 +46,15 @@ public class GameManager : MonoBehaviour
     public void setGameOverText()
     {
         lives.text = "0";
+        gameOverText.text = "GAME OVER";
+        gameOverText.DOColor(Color.clear, 3f).OnComplete(() => {
+            gameOverText.DOColor(new Color(0, 0.830188f, 0.06344367f, 1), 0.25f);
+        });
+    }
+
+    public void setWinText()
+    {
+        gameOverText.text = "MISSION COMPLETE";
         gameOverText.DOColor(Color.clear, 3f).OnComplete(() => {
             gameOverText.DOColor(new Color(0, 0.830188f, 0.06344367f, 1), 0.25f);
         });
@@ -128,6 +124,11 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(SpawnMotherFairyBonus(2.5f));
         }
+        else if (isBossRound)
+        {
+            powerupAmount = 0;
+            Character.activePowerup = -1;
+        }
     }
 
     public void moveDown()
@@ -177,38 +178,46 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (timeSlowisActive && (Time.time - timeSlowStartTime) >= 10)
+        if (!isBossRound)
         {
-            timeSlowisActive = false;
-            timeSlowSlider.gameObject.SetActive(false);
-            speedMultiplier = 1f;
-        }
-        else if (timeSlowisActive)
-        {
-            timeSlowSlider.value = (Time.time - timeSlowStartTime) / 10;
-            speedMultiplier = 0.25f;
+            if (timeSlowisActive && (Time.time - timeSlowStartTime) >= 10)
+            {
+                timeSlowisActive = false;
+                timeSlowSlider.gameObject.SetActive(false);
+                speedMultiplier = 1f;
+            }
+            else if (timeSlowisActive)
+            {
+                timeSlowSlider.value = (Time.time - timeSlowStartTime) / 10;
+                speedMultiplier = 0.25f;
+            }
+            else
+            {
+                timeSlowSlider.gameObject.SetActive(false);
+            }
+
+            if (doubleShotisActive && (Time.time - doubleShotStartTime) >= 10)
+            {
+                doubleShotisActive = false;
+                doubleShotSlider.gameObject.SetActive(false);
+                shootFrequency = 0.25f;
+            }
+            else if (doubleShotisActive)
+            {
+                doubleShotSlider.value = (Time.time - doubleShotStartTime) / 10;
+                shootFrequency = 0.125f;
+            }
+            else
+            {
+                doubleShotSlider.gameObject.SetActive(false);
+            }
         }
         else
         {
-            timeSlowSlider.gameObject.SetActive(false);
-        }
-
-        if (doubleShotisActive && (Time.time - doubleShotStartTime) >= 10)
-        {
-            doubleShotisActive = false;
-            doubleShotSlider.gameObject.SetActive(false);
+            speedMultiplier = 1f;
             shootFrequency = 0.25f;
         }
-        else if (doubleShotisActive)
-        {
-            doubleShotSlider.value = (Time.time - doubleShotStartTime) / 10;
-            shootFrequency = 0.125f;
-        }
-        else
-        {
-            doubleShotSlider.gameObject.SetActive(false);
-        }
-
+        
         if (!isBossRound && !isBonusRound)
         {
             if (fairies.Count <= 5)
@@ -227,6 +236,17 @@ public class GameManager : MonoBehaviour
         {
             if (bonusMotherFairy == 0) {
                 checkBeforeNextRound();
+            }
+        }
+        else if (isBossRound)
+        {
+            if (ReisenManager.isDead)
+            {
+                if (!isWon)
+                {
+                    isWon = true;
+                    Invoke("setWinText", 3f);
+                }
             }
         }
     }
