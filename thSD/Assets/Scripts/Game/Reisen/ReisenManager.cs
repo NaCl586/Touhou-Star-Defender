@@ -15,6 +15,7 @@ public class ReisenManager : MonoBehaviour
     public GameObject[] bossParts;
     private Color[] colors = new Color[5];
     public GameObject effect;
+    public GameObject glow;
 
     public GameObject deathParticle;
     private GameObject _dpInstance;
@@ -31,8 +32,11 @@ public class ReisenManager : MonoBehaviour
             bossParts[i].GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f);
         }
         bossParts[4].GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
-            for (int i = 0; i < bossParts.Length; i++)
-                bossParts[i].GetComponent<SpriteRenderer>().DOColor(colors[i], 0.125f);
+            if (HP > 0)
+            {
+                for (int i = 0; i < bossParts.Length; i++)
+                    bossParts[i].GetComponent<SpriteRenderer>().DOColor(colors[i], 0.125f);
+            }
         });
 
         HP--;
@@ -49,9 +53,9 @@ public class ReisenManager : MonoBehaviour
             b.GetComponent<BoxCollider2D>().enabled = false;
             _dpInstance = Instantiate(deathParticle, b.transform.position, Quaternion.identity);
             Destroy(_dpInstance, _dpInstance.GetComponent<ParticleSystem>().main.duration);
-            b.SetActive(false);
         }
         effect.SetActive(false);
+        glow.SetActive(false);
         _gm.addScore(1500);
         isDead = true;
     }

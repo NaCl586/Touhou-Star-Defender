@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _as: {fileID: 0}
   shotSound: {fileID: 8300000, guid: b08183a7b12b1a44e9a3337dd42be382, type: 3}
-  bullet: {fileID: 3187098419936989641, guid: 3e8c5e161f47fa54693102a8c80d910b, type: 3}
+  bullet: {fileID: -4444889085398455204, guid: 3e8c5e161f47fa54693102a8c80d910b, type: 3}
   bulletSpeed: 0.01
   shotCount: 12
   clockwise: 1
@@ -1389,6 +1389,7 @@ MonoBehaviour:
   - {fileID: 1199122444}
   - {fileID: 1093216402}
   effect: {fileID: 812532541}
+  glow: {fileID: 927309985}
   deathParticle: {fileID: 5062158982661308964, guid: ef93875c0f6641649aa2de4748e00748, type: 3}
   bossDeath: {fileID: 8300000, guid: fb1bbf588a78c034489f01b18ec995e3, type: 3}
 --- !u!1 &1491555278
@@ -2020,7 +2021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _as: {fileID: 0}
   shotSound: {fileID: 8300000, guid: b08183a7b12b1a44e9a3337dd42be382, type: 3}
-  bullet: {fileID: 3187098419936989641, guid: 3e8c5e161f47fa54693102a8c80d910b, type: 3}
+  bullet: {fileID: -4444889085398455204, guid: 3e8c5e161f47fa54693102a8c80d910b, type: 3}
   bulletSpeed: 0.01
   shotCount: 12
   clockwise: 0
