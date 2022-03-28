@@ -13,6 +13,8 @@ public class ReisenManager : MonoBehaviour
 
     private ReisenBoss currentAttack;
     public GameObject[] bossParts;
+    private Color[] colors = new Color[5];
+    public GameObject effect;
 
     public GameObject deathParticle;
     private GameObject _dpInstance;
@@ -20,8 +22,19 @@ public class ReisenManager : MonoBehaviour
 
     private int attackingIdx = 0;
 
+    private GameManager _gm;
+
     public void ReduceHP()
     {
+        for (int i = 0; i < bossParts.Length-1; i++)
+        {
+            bossParts[i].GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f);
+        }
+        bossParts[4].GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
+            for (int i = 0; i < bossParts.Length; i++)
+                bossParts[i].GetComponent<SpriteRenderer>().DOColor(colors[i], 0.125f);
+        });
+
         HP--;
         HPBar.value = (float) HP / 100;
         if (HP <= 0) BossDead();
@@ -36,13 +49,23 @@ public class ReisenManager : MonoBehaviour
             b.GetComponent<BoxCollider2D>().enabled = false;
             _dpInstance = Instantiate(deathParticle, b.transform.position, Quaternion.identity);
             Destroy(_dpInstance, _dpInstance.GetComponent<ParticleSystem>().main.duration);
+            b.SetActive(false);
         }
+        effect.SetActive(false);
+        _gm.addScore(1500);
         isDead = true;
     }
 
     public void Start()
     {
+        _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        for(int i = 0; i < bossParts.Length; i++)
+        {
+            colors[i] = bossParts[i].GetComponent<SpriteRenderer>().color;
+        }
+
         currentAttack = bossParts[0].GetComponent<ReisenBoss>();
+
         StartCoroutine(PurpleAttack());
         StartCoroutine(ReisenAttack());
         StartCoroutine(PinkAttack());

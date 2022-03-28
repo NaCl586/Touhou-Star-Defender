@@ -50,7 +50,7 @@ public class Fairy : MonoBehaviour
     public void reduceHP()
     {
         HP--;
-        this.gameObject.GetComponent<SpriteRenderer>().DOColor(Color.blue, 0.125f).OnComplete(() => {
+        this.gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
             this.gameObject.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.125f);
         });
         if (HP == 0)

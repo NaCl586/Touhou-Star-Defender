@@ -7,6 +7,16 @@ public class BulletPool : MonoBehaviour
     public GameObject bullet;
     public Queue<GameObject> shootPool = new Queue<GameObject>();
 
+    public void Start()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            GameObject newShoot = Instantiate(bullet);
+            newShoot.SetActive(false);
+            shootPool.Enqueue(newShoot);
+        }
+    }
+
     public GameObject GetNewBullet()
     {
         //kalau di pool ga ada apa2, maka instantiate baru

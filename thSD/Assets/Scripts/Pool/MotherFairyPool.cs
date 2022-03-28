@@ -6,7 +6,17 @@ public class MotherFairyPool : MonoBehaviour
 {
     public GameObject motherFairy;
     public Queue<GameObject> MFPool = new Queue<GameObject>();
-    
+
+    public void Start()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject newMF = Instantiate(motherFairy);
+            newMF.SetActive(false);
+            MFPool.Enqueue(newMF);
+        }
+    }
+
     public GameObject GetNewMotherFairy(char dir)
     {
         GameObject motherFairyInstance;
