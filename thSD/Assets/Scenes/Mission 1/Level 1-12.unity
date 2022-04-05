@@ -1383,11 +1383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HPBar: {fileID: 913975506}
   bossParts:
-  - {fileID: 1819043451}
-  - {fileID: 344875567}
-  - {fileID: 2146099791}
-  - {fileID: 1199122444}
-  - {fileID: 1093216402}
+  - {fileID: 1819043456}
+  - {fileID: 344875572}
+  - {fileID: 2146099797}
+  - {fileID: 1199122450}
+  - {fileID: 1093216408}
   effect: {fileID: 812532541}
   glow: {fileID: 927309985}
   deathParticle: {fileID: 5062158982661308964, guid: ef93875c0f6641649aa2de4748e00748, type: 3}
