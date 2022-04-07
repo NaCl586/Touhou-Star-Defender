@@ -78,12 +78,12 @@ public class MotherFairy : MonoBehaviour
         Destroy(_dpInstance, _dpInstance.GetComponent<ParticleSystem>().main.duration);
 
         //probability:
-        //extend: 10%, bonus pts: 25%, double shot: 20%, time slow: 20%, shield: 25%)
+        //extend: 15%, bonus pts: 25%, double shot: 20%, time slow: 15%, shield: 25%)
         int index, rng = Random.Range(1, 101);
-        if (rng >= 1 && rng <= 10) index = 0;
-        else if (rng >= 11 && rng <= 35) index = 1;
-        else if (rng >= 36 && rng <= 55) index = 2;
-        else if (rng >= 56 && rng <= 75) index = 3;
+        if (rng >= 1 && rng <= 15) index = 0;
+        else if (rng >= 16 && rng <= 50) index = 1;
+        else if (rng >= 41 && rng <= 60) index = 2;
+        else if (rng >= 61 && rng <= 75) index = 3;
         else index = 4;
 
         Instantiate(items[index], transform.position, Quaternion.identity);
