@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class KuruYYBlue : KuruBoss
+public class Marisa : MarisaBoss
 {
+    private int addedAngle;
+
     public override void ShootBullet()
     {
+        StartCoroutine(ShootDelay());
+    }
+
+    IEnumerator ShootDelay()
+    {
+        if (MarisaManager.HP <= 0) yield return null;
         _as.PlayOneShot(shotSound);
-        float addedAngle = 0;
-        if (Random.Range(0, 2) % 2 == 1) addedAngle += (Random.Range(-15f, 15f));
-        if (KuruManager.HP <= 0) return;
-        for (int i = 0; i < shotCount; i++)
+
+        int count = Random.Range(3, 5);
+        for (int i = 0; i < count; i++)
         {
             GameObject bullets = _bp.InstantiateNewBullet();
             bullets.GetComponent<SpriteRenderer>().sprite = bullet;
@@ -19,8 +25,9 @@ public class KuruYYBlue : KuruBoss
             bullets.SetActive(false);
             bullets.GetComponent<Bullet>().bulletSpeed = bulletSpeed;
             bullets.GetComponent<Bullet>().homing = true;
-            bullets.GetComponent<Bullet>().direction = ((i - shotCount / 2) * (float)(180 / shotCount) + addedAngle);
+            bullets.GetComponent<Bullet>().direction = ((float)(i - count / 2) * (float)(90 / count));
             bullets.SetActive(true);
         }
+        yield return null;
     }
 }

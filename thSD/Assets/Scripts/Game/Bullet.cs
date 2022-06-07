@@ -49,7 +49,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += dir * bulletSpeed * GameManager.speedMultiplier;
+        transform.position += dir * bulletSpeed * GameManager.speedMultiplier * Time.deltaTime * 500f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

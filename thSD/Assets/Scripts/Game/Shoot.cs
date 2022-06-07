@@ -35,7 +35,10 @@ public class Shoot : MonoBehaviour
         }
         else if (other.CompareTag("Boss"))
         {
-            other.transform.parent.GetComponent<ReisenManager>().ReduceHP();
+            if(other.name == "Reisen")
+                other.transform.parent.GetComponent<ReisenManager>().ReduceHP();
+            else if(other.name == "Marisa")
+                other.transform.parent.GetComponent<MarisaManager>().ReduceHP();
             _poolManager.returnShootToPool(gameObject);
         }
     }

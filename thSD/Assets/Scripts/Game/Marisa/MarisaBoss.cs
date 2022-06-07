@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class KuruBoss : MonoBehaviour
+public abstract class MarisaBoss : MonoBehaviour
 {
     protected BulletPool _bp;
     public AudioSource _as;

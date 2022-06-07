@@ -1,22 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class KuruManager : MonoBehaviour
+public class MarisaManager : MonoBehaviour
 {
     public static bool isDead = false;
     int MaxHP = 100;
     public static int HP = 100;
     public Slider HPBar;
 
-    private ReisenBoss currentAttack;
-    public ReisenBoss[] bossParts;
+    private MarisaBoss currentAttack;
+    public MarisaBoss[] bossParts;
     private Color[] colors = new Color[5];
     public GameObject effect;
     public GameObject glow;
@@ -35,7 +31,7 @@ public class KuruManager : MonoBehaviour
         {
             bossParts[i].gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f);
         }
-        bossParts[4].gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
+        bossParts[bossParts.Length - 1].gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
             if (HP > 0)
             {
                 for (int i = 0; i < bossParts.Length; i++)
@@ -51,7 +47,7 @@ public class KuruManager : MonoBehaviour
     public void BossDead()
     {
         currentAttack._as.PlayOneShot(bossDeath);
-        foreach (ReisenBoss b in bossParts)
+        foreach (MarisaBoss b in bossParts)
         {
             b.gameObject.GetComponent<SpriteRenderer>().DOColor(Color.clear, 0.25f);
             b.gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -62,6 +58,7 @@ public class KuruManager : MonoBehaviour
         glow.SetActive(false);
         _gm.addScore(1500);
         isDead = true;
+        _gm.setWinText();
     }
 
     public void Start()
@@ -72,14 +69,13 @@ public class KuruManager : MonoBehaviour
             colors[i] = bossParts[i].gameObject.GetComponent<SpriteRenderer>().color;
         }
 
-        currentAttack = bossParts[0].GetComponent<ReisenBoss>();
+        currentAttack = bossParts[0].GetComponent<MarisaBoss>();
 
-        StartCoroutine(PurpleAttack());
-        StartCoroutine(ReisenAttack());
-        StartCoroutine(PinkAttack());
+        StartCoroutine(BlueAttack());
+        StartCoroutine(MarisaAttack());
     }
 
-    IEnumerator PurpleAttack()
+    IEnumerator BlueAttack()
     {
         yield return new WaitForSeconds(2f);
         while (HP > 0)
@@ -92,25 +88,13 @@ public class KuruManager : MonoBehaviour
         }
     }
 
-    IEnumerator PinkAttack()
-    {
-        yield return new WaitForSeconds(7f);
-        while (HP > 0)
-        {
-            bossParts[2].ShootBullet();
-            yield return new WaitForSeconds(0.25f);
-            bossParts[3].ShootBullet();
-            yield return new WaitForSeconds(10f);
-        }
-    }
-
-    IEnumerator ReisenAttack()
+    IEnumerator MarisaAttack()
     {
         yield return new WaitForSeconds(5f);
         while (HP > 0)
         {
-            bossParts[4].ShootBullet();
-            yield return new WaitForSeconds(8f);
+            bossParts[bossParts.Length-1].ShootBullet();
+            yield return new WaitForSeconds(Random.Range(3, 5));
         }
     }
 }
