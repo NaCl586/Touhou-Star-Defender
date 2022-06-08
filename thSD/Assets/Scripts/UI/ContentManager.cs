@@ -94,8 +94,8 @@ public class ContentManager : MonoBehaviour
         else if (type == 1) _gm.setPowerupText("Left Swing");
         else if (type == 2) _gm.setPowerupText("Front Hit");
         else if (type == 3) _gm.setPowerupText("V-Strike");
-        else if (type == 4) _gm.setPowerupText("Circle Attack");
-        else if (type == 5) _gm.setPowerupText("Homing Amulet");
+        else if (type == 4) _gm.setPowerupText("Homing Amulet");
+        else if (type == 5) _gm.setPowerupText("Spread Shot");
 
         //item
         else if (type == -1) _gm.setPowerupText("Extend");

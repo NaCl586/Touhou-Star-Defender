@@ -143,6 +143,65 @@ public class Fairy : MonoBehaviour
             float bulletSpeed = Random.Range(0.005f, 0.01f);
             StartCoroutine(yellowFairyShots(shotCount, bulletSpeed, Random.Range(3,9)));
         }
+
+        //fairy hitam
+        else if (shotType == 3)
+        {
+            shotCount = Random.Range(5, 16);
+            _as.PlayOneShot(fairyData.bulletShootSound);
+            float bulletSpeed = Random.Range(0.005f, 0.01f);
+            float offset = (360 / shotCount) / 2;
+            for (int i = 0; i < shotCount; i++)
+            {
+                GameObject bullets = _poolManager.InstantiateNewBullet();
+                bullets.GetComponent<SpriteRenderer>().sprite = fairyData.bullet;
+                bullets.transform.position = transform.position;
+                bullets.SetActive(false);
+                bullets.GetComponent<Bullet>().bulletSpeed = bulletSpeed;
+                bullets.GetComponent<Bullet>().homing = false;
+                bullets.GetComponent<Bullet>().direction = (i * (float)(360 / shotCount)) + offset;
+                bullets.SetActive(true);
+            }
+        }
+
+        //fairy hijau
+        else if(shotType == 4)
+        {
+            int loops = Random.Range(1, 7);
+            float bulletSpeed = Random.Range(0.005f, 0.01f);
+            int addedAngle = Random.Range(0, 360);
+            int shots = Random.Range(2, 5);
+            float delay = Random.Range(0.1f, 0.25f) / shots;
+            StartCoroutine(greenFairyShots(loops, bulletSpeed, delay, addedAngle, shots));
+        }
+    }
+
+    IEnumerator greenFairyShots(int loops, float bulletSpeed, float delay, int addedAngle, int shots)
+    {
+        int count = Random.Range(4, 12);
+        float gap = 180 / count;
+        int evenLoop = 0;
+        for (int i = 0; i < loops; i++)
+        {
+            evenLoop = i % 2 == 0 ? 0 : 180;
+            for (int j = 0; j < count; j++)
+            {
+                _as.PlayOneShot(fairyData.bulletShootSound);
+                int offset = 360 / shots;
+                for (int k = 0; k < shots; k++)
+                {
+                    GameObject bullets = _poolManager.InstantiateNewBullet();
+                    bullets.GetComponent<SpriteRenderer>().sprite = fairyData.bullet;
+                    bullets.transform.position = transform.position;
+                    bullets.SetActive(false);
+                    bullets.GetComponent<Bullet>().bulletSpeed = bulletSpeed;
+                    bullets.GetComponent<Bullet>().homing = false;
+                    bullets.GetComponent<Bullet>().direction = (k * offset) + evenLoop + addedAngle + (j * gap);
+                    bullets.SetActive(true);
+                }
+                yield return new WaitForSeconds(delay);
+            }
+        }
     }
 
     IEnumerator yellowFairyShots(int shotCount, float bulletSpeed, int count)

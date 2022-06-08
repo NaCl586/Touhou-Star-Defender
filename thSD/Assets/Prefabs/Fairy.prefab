@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fairyData: {fileID: 11400000, guid: 0638842be7c7b2c4c8189791662b8460, type: 2}
-  movingStates: 0
 --- !u!50 &4002895868055161037
 Rigidbody2D:
   serializedVersion: 4

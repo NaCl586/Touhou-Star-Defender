@@ -33,6 +33,8 @@ public class Character : MonoBehaviour
 
     public static int activePowerup = -1;
     public List<GameObject> powerupList = new List<GameObject>();
+    public List<FantasySeal> fantasySeal;
+    public Shoot shoot;
 
     private Vector3 _initPos;
 
@@ -175,11 +177,43 @@ public class Character : MonoBehaviour
         //powerup
         if (Input.GetKey(KeyCode.X) && activePowerup != -1)
         {
-            Instantiate(powerupList[activePowerup], transform.position, Quaternion.identity);
+            if (activePowerup < 4)
+                Instantiate(powerupList[activePowerup], transform.position, Quaternion.identity);
+            else if (activePowerup == 4)
+                StartCoroutine(fantasySealAttack());
+            else if (activePowerup == 5)
+                StartCoroutine(spreadShot());
+
             activePowerup = -1;
             _audioSource.PlayOneShot(powerupSound);
             GameManager.powerupAmount = 0;
             _gm.setPowerupIcon();
+        }
+    }
+
+    IEnumerator fantasySealAttack()
+    {
+        int count = Random.Range(6, 10);
+        for(int i = 0; i < count; i++)
+        {
+            FantasySeal instance = Instantiate(fantasySeal[Random.Range(0, fantasySeal.Count)], transform.position, Quaternion.identity);
+            instance.direction = (i % 2 == 0) ? 'l' : 'r';
+            instance.prepareShot();
+
+            yield return new WaitForSeconds(0.25f);
+        }
+    }
+
+    IEnumerator spreadShot()
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            for(int j = 0; j < 10; j++)
+            {
+                Shoot reimuShoot = Instantiate(shoot, transform.position, Quaternion.identity);
+                reimuShoot.changeDirection(-60 + (j * 15));
+            }
+            yield return new WaitForSeconds(0.125f);
         }
     }
 }

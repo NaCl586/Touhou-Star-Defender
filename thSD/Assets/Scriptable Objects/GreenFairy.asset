@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f87503c411a7a46b56603048cbf445, type: 3}
+  m_Name: GreenFairy
+  m_EditorClassIdentifier: 
+  _name: GreenFairy
+  HP: 5
+  sprite: {fileID: -5515795465362078605, guid: 3fe8fc179d99bc8468d27da40d16277d, type: 3}
+  animator: {fileID: 9100000, guid: 09b472a5bbefff24cac76e56f4d60996, type: 2}
+  deathSound: {fileID: 8300000, guid: 273747eb58d42384587fde9dee2f0842, type: 3}
+  deathEffect: {fileID: 5062158982661308964, guid: ef93875c0f6641649aa2de4748e00748, type: 3}
+  bullet: {fileID: 2755764001775963997, guid: 3e8c5e161f47fa54693102a8c80d910b, type: 3}
+  bulletShootSound: {fileID: 8300000, guid: b08183a7b12b1a44e9a3337dd42be382, type: 3}
+  itemDrops: {fileID: 5944210123991081743, guid: 2508955f80bb6fb4eaef5f825ddbf4f5, type: 3}
+  shotType: 4
+  shotCount: 20

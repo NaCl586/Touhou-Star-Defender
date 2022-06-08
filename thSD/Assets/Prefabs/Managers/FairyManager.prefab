@@ -43,6 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08605d24d5aace1418589fc482d4a7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBonusRound: 0
+  isBossRound: 0
+  bonusMotherFairy: 17
+  gameOverText: {fileID: 0}
+  isWon: 0
   score: {fileID: 0}
   levelName: {fileID: 0}
   lives: {fileID: 0}
@@ -58,5 +63,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 26d7a92fe146f714cafdab4069e09cd6, type: 3}
   - {fileID: 21300000, guid: bb0b1ec5efb2adf44a944ba7de0c027b, type: 3}
   - {fileID: 21300000, guid: d0b0a34b7b1f80c4f8917c90d6835093, type: 3}
+  - {fileID: 21300000, guid: 527188e55c006f647b73fb071ba5577b, type: 3}
+  - {fileID: 21300000, guid: 88309b4834c55f446845abb6a3548a3a, type: 3}
   loadingScreen: {fileID: 0}
   fairies: []
+  timeSlowSlider: {fileID: 0}
+  doubleShotSlider: {fileID: 0}

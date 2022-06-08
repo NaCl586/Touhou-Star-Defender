@@ -79,6 +79,8 @@ public class GameManager : MonoBehaviour
         else if (powerupType == 1) color = new Color(0, 0.7695842f, 1, 1);
         else if (powerupType == 2) color = Color.white;
         else if (powerupType == 3) color = Color.yellow;
+        else if (powerupType == 4) color = Color.green;
+        else if (powerupType == 5) color = Color.gray;
 
         for (int i = 0; i < 4; i++)
         {
