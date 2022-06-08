@@ -19,6 +19,6 @@ public class BossFloatingMovement : MonoBehaviour
     {
         tempPos = posOffset;
         tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
-        transform.position = tempPos;
+        transform.position = new Vector3(transform.position.x, tempPos.y, transform.position.z);
     }
 }

@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class MarisaManager : MonoBehaviour
+public class WriggleManager : MonoBehaviour
 {
     public static bool isDead = false;
     int MaxHP = 100;
     public static int HP = 100;
     public Slider HPBar;
 
-    private MarisaBoss currentAttack;
-    public MarisaBoss[] bossParts;
+    private WriggleBoss currentAttack;
+    public WriggleBoss[] bossParts;
     private Color[] colors = new Color[5];
     public GameObject effect;
     public GameObject glow;
@@ -28,11 +28,11 @@ public class MarisaManager : MonoBehaviour
 
     public void ReduceHP()
     {
-        for (int i = 0; i < bossParts.Length - 1; i++)
+        for (int i = 0; i < bossParts.Length-1; i++)
         {
             bossParts[i].gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f);
         }
-        bossParts[bossParts.Length - 1].gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
+        bossParts[4].gameObject.GetComponent<SpriteRenderer>().DOColor(Color.red, 0.125f).OnComplete(() => {
             if (HP > 0)
             {
                 for (int i = 0; i < bossParts.Length; i++)
@@ -41,27 +41,14 @@ public class MarisaManager : MonoBehaviour
         });
 
         HP--;
-        HPBar.value = (float)HP / 100;
+        HPBar.value = (float) HP / 100;
         if (HP <= 0) BossDead();
-    }
-
-    
-    public void FixedUpdate()
-    {
-        if (transform.position.x < -1) dir = 'r';
-        else if (transform.position.x > 1) dir = 'l';
-
-        if (dir == 'l')
-            transform.position += Vector3.left * 0.01f;
-        else if (dir == 'r')
-            transform.position += Vector3.right * 0.01f;
-       
     }
 
     public void BossDead()
     {
         currentAttack._as.PlayOneShot(bossDeath);
-        foreach (MarisaBoss b in bossParts)
+        foreach(WriggleBoss b in bossParts)
         {
             b.gameObject.GetComponent<SpriteRenderer>().DOColor(Color.clear, 0.25f);
             b.gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -75,22 +62,36 @@ public class MarisaManager : MonoBehaviour
         _gm.setWinText();
     }
 
+    public void FixedUpdate()
+    {
+        if (transform.position.x < -0.5) dir = 'r';
+        else if (transform.position.x > 0.5) dir = 'l';
+
+        if (dir == 'l')
+            transform.position += Vector3.left * 0.01f;
+        else if (dir == 'r')
+            transform.position += Vector3.right * 0.01f;
+
+    }
+
     public void Start()
     {
         dir = Random.Range(0, 100) % 2 == 0 ? 'l' : 'r';
+
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        for (int i = 0; i < bossParts.Length; i++)
+        for(int i = 0; i < bossParts.Length; i++)
         {
             colors[i] = bossParts[i].gameObject.GetComponent<SpriteRenderer>().color;
         }
 
-        currentAttack = bossParts[0].GetComponent<MarisaBoss>();
+        currentAttack = bossParts[0].GetComponent<WriggleBoss>();
 
-        StartCoroutine(BlueAttack());
-        StartCoroutine(MarisaAttack());
+        StartCoroutine(YellowAttack());
+        StartCoroutine(WriggleAttack());
+        StartCoroutine(GreenAttack());
     }
 
-    IEnumerator BlueAttack()
+    IEnumerator YellowAttack()
     {
         yield return new WaitForSeconds(2f);
         while (HP > 0)
@@ -99,18 +100,29 @@ public class MarisaManager : MonoBehaviour
             attackingIdx++;
             attackingIdx %= 2;
             currentAttack = bossParts[attackingIdx];
-            yield return new WaitForSeconds(0.75f);
+            yield return new WaitForSeconds(1f);
         }
     }
 
-    IEnumerator MarisaAttack()
+    IEnumerator GreenAttack()
     {
         yield return new WaitForSeconds(5f);
         while (HP > 0)
         {
-            bossParts[bossParts.Length-1].ShootBullet();
-            yield return new WaitForSeconds(Random.Range(3, 5));
+            bossParts[2].ShootBullet();
+            yield return new WaitForSeconds(0.25f);
+            bossParts[3].ShootBullet();
+            yield return new WaitForSeconds(6f);
+        }
+    }
+
+    IEnumerator WriggleAttack()
+    {
+        yield return new WaitForSeconds(3f);
+        while (HP > 0)
+        {
+            bossParts[4].ShootBullet();
+            yield return new WaitForSeconds(3f);
         }
     }
 }
-

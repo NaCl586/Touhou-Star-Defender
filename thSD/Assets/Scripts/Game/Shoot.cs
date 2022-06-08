@@ -48,6 +48,9 @@ public class Shoot : MonoBehaviour
                 other.transform.parent.GetComponent<ReisenManager>().ReduceHP();
             else if(other.name == "Marisa")
                 other.transform.parent.GetComponent<MarisaManager>().ReduceHP();
+            else if (other.name == "Wriggle")
+                other.transform.parent.GetComponent<WriggleManager>().ReduceHP();
+
             _poolManager.returnShootToPool(gameObject);
         }
     }
