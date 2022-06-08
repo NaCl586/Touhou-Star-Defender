@@ -26,11 +26,12 @@ public class FantasySeal : MonoBehaviour
             return;
         }
 
-        do
+        lockedFairy = _gm.fairies[Random.Range(0, _gm.fairies.Count)];
+        while (selectedFairy.Contains(lockedFairy))
         {
             lockedFairy = _gm.fairies[Random.Range(0, _gm.fairies.Count)];
+            if(_gm.fairies.Count == 0 || _gm.fairies.Count <= selectedFairy.Count) break;
         }
-        while (selectedFairy.Contains(lockedFairy));
         selectedFairy.Add(lockedFairy);
 
         if (phase == 0)
@@ -47,6 +48,12 @@ public class FantasySeal : MonoBehaviour
     {
         if(phase == 1)
         {
+            if (lockedFairy == null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             Vector3 dir = (lockedFairy.transform.position - transform.position).normalized;
             transform.position += dir * 0.01f;
 
