@@ -13,6 +13,18 @@ public class WriggleManager : BossManager
         StartCoroutine(GreenAttack());
     }
 
+    public void FixedUpdate()
+    {
+        if (transform.position.x < -0.5f) dir = 'r';
+        else if (transform.position.x > 0.5f) dir = 'l';
+
+        if (dir == 'l')
+            transform.position += Vector3.left * 0.01f;
+        else if (dir == 'r')
+            transform.position += Vector3.right * 0.01f;
+
+    }
+
     IEnumerator YellowAttack()
     {
         yield return new WaitForSeconds(2f);
