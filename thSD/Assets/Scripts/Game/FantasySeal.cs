@@ -55,7 +55,7 @@ public class FantasySeal : MonoBehaviour
             }
 
             Vector3 dir = (lockedFairy.transform.position - transform.position).normalized;
-            transform.position += dir * 0.01f;
+            transform.position += dir * Time.deltaTime * 5f;
 
             if(Vector3.Distance(lockedFairy.transform.position, transform.position) < 0.1)
             {

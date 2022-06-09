@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     public void setGameOverText()
     {
+        gameOverText.color = Color.clear;
         lives.text = "0";
         gameOverText.text = "GAME OVER";
         gameOverText.DOColor(Color.clear, 3f).OnComplete(() => {
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void setWinText()
     {
+        gameOverText.color = Color.clear;
         gameOverText.text = "MISSION COMPLETE";
         gameOverText.DOColor(Color.clear, 3f).OnComplete(() => {
             gameOverText.DOColor(new Color(0, 0.830188f, 0.06344367f, 1), 0.25f);
