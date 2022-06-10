@@ -113,4 +113,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mission 3/Level 3-12.unity
     guid: a316cacb95494a247b61b5a1cbef6735
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-1.unity
+    guid: d634ff2894459294eb020d8ceafd1b9f
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-2.unity
+    guid: 2903f39644e9f8a41b6e0a0869fbbac4
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-3.unity
+    guid: 6877f63aab5e2ac48b895e124b0b8ef1
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-4.unity
+    guid: 65719786c3d8c7249b9609fcda1b2916
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-5.unity
+    guid: 551e21ef320f9814096884f75b9ab992
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-6.unity
+    guid: 9b4f42d19cf1a5e4f9e1879582ba5f5c
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-7.unity
+    guid: b4b2df23fb19af9439673662fef06fbe
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-8.unity
+    guid: 26857983d41895647b872ea852d9dbe4
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-9.unity
+    guid: d8e0c137354890a43b17906d250c7a8b
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-10.unity
+    guid: b687b015a87974f429e1510e0ef7c122
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-11.unity
+    guid: b4c5ee556f6fe634aba5f70258f652e1
+  - enabled: 1
+    path: Assets/Scenes/Mission 4/Level 4-12.unity
+    guid: bd953e1efd857804f8506e3b2c07ab15
   m_configObjects: {}

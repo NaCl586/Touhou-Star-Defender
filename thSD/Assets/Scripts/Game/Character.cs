@@ -211,7 +211,7 @@ public class Character : MonoBehaviour
             for(int j = 0; j < 10; j++)
             {
                 Shoot reimuShoot = Instantiate(shoot, transform.position, Quaternion.identity);
-                reimuShoot.changeDirection(-60 + (j * 15));
+                reimuShoot.changeDirection(-60 - 7.5f + (j * 15));
             }
             yield return new WaitForSeconds(0.125f);
         }

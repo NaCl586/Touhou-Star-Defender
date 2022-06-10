@@ -14,7 +14,7 @@ public class Shoot : MonoBehaviour
         dir = Vector3.up;
     }
 
-    public void changeDirection(int direction)
+    public void changeDirection(float direction)
     {
         dir = Quaternion.Euler(new Vector3(0, 0, direction)) * Vector3.up;
         float rot_z = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;

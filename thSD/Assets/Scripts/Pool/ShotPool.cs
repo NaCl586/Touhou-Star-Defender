@@ -39,7 +39,8 @@ public class ShotPool : MonoBehaviour
     {
         GameObject bullet = GetNewBullet();
         bullet.SetActive(true);
-        bullet.transform.position = character.transform.position; 
+        bullet.transform.position = character.transform.position;
+        bullet.GetComponent<Shoot>().changeDirection(0);
     }
 
     //dipanggil pas collide di collider offscreen, kalau misal offscreen, bullet yang kena disana bakal dinonaktifin, terus dienqueue
