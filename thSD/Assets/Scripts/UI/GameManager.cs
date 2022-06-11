@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public static int powerupAmount;
 
     public GameObject loadingScreen;
+    public GameObject pauseScreen;
+    private bool isPaused;
 
     private static int _currentScore = 0;
     private static int _lives = 5;
@@ -114,6 +116,9 @@ public class GameManager : MonoBehaviour
         setPowerupIcon();
 
         loadingScreen.SetActive(false);
+        pauseScreen.SetActive(false);
+
+        isPaused = false;
 
         if(!isBonusRound && !isBossRound)
         {
@@ -253,6 +258,13 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPaused = !isPaused;
+            if (isPaused) Pause();
+            else Unpause();
+        }
     }
 
     void checkBeforeNextRound()
@@ -359,5 +371,29 @@ public class GameManager : MonoBehaviour
     {
         _currentScore += _score;
         score.text = _currentScore.ToString();
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        isPaused = true;
+        pauseScreen.SetActive(true);
+        pauseScreen.GetComponent<Image>().color = Color.clear;
+        pauseScreen.GetComponent<Image>().DOColor(new Color(1, 1, 1, 0.5f), 0.125f);
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+        isPaused = false;
+        pauseScreen.GetComponent<Image>().DOColor(Color.clear, 0.125f).OnComplete(() => {
+            pauseScreen.SetActive(false);
+        });
+    }
+
+    public void ReturnToMainMenu()
+    {
+        Time.timeScale = 1;
+        Application.Quit();
     }
 }
