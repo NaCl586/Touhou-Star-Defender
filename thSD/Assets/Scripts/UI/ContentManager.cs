@@ -18,6 +18,8 @@ public class ContentManager : MonoBehaviour
     {
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         _as = this.GetComponent<AudioSource>();
+
+        _as.volume = PlayerPrefs.GetFloat("soundVolume", 0.25f);
     }
 
     public void PickupPowerup(int type)

@@ -547,8 +547,12 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3386108195868985376, guid: a753ee4a87d87c14396959894a54ec39, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -307.5
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386108195868985376, guid: a753ee4a87d87c14396959894a54ec39, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3386108195868985391, guid: a753ee4a87d87c14396959894a54ec39, type: 3}
       propertyPath: m_IsActive
@@ -1648,6 +1652,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3846018997732848409, guid: c211a7118805f934fbf288b5525314d4, type: 3}
   m_PrefabInstance: {fileID: 736566169}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &802924155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6299384394670407157, guid: e9745496d2242184e8293a2ec2db089b, type: 3}
+  m_PrefabInstance: {fileID: 1779724053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963096592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +2674,10 @@ PrefabInstance:
       propertyPath: pauseScreen
       value: 
       objectReference: {fileID: 269440520}
+    - target: {fileID: 8157958482438322199, guid: 6708f8cbc92470347ac2ad5737a2eed6, type: 3}
+      propertyPath: gameMusic
+      value: 
+      objectReference: {fileID: 802924155}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6708f8cbc92470347ac2ad5737a2eed6, type: 3}
 --- !u!4 &2146437084 stripped

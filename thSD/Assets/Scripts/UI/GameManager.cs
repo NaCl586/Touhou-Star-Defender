@@ -39,11 +39,13 @@ public class GameManager : MonoBehaviour
     public static float speedMultiplier = 1f;
     public static float shootFrequency = 0.25f;
 
+    public GameObject gameMusic;
+
     public void setLives(int live) {
         _lives = live;
         lives.text = _lives.ToString();
     }
-    public int getLives(){return _lives; }
+    public int getLives() { return _lives; }
 
     public void setGameOverText()
     {
@@ -62,6 +64,23 @@ public class GameManager : MonoBehaviour
         gameOverText.DOColor(Color.clear, 3f).OnComplete(() => {
             gameOverText.DOColor(new Color(0, 0.830188f, 0.06344367f, 1), 0.25f);
         });
+
+        string scene = SceneManager.GetActiveScene().name;
+
+        if (scene == "Level 1-12") PlayerPrefs.SetInt("Mission1Complete", 1);
+        else if (scene == "Level 2-12") PlayerPrefs.SetInt("Mission2Complete", 1);
+        else if (scene == "Level 3-12") PlayerPrefs.SetInt("Mission3Complete", 1);
+        else if (scene == "Level 4-12") PlayerPrefs.SetInt("Mission4Complete", 1);
+
+        StartCoroutine(backToMissionSelect(8f));
+    }
+
+    IEnumerator backToMissionSelect(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(gameMusic);
+        MainMenuManager.fromMissionComplete = true;
+        SceneManager.LoadScene(0);
     }
 
     public void setPowerupText(string text)
@@ -107,16 +126,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        character = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
+        if(!isMainMenuFairy) character = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
         _mfPool = GameObject.FindGameObjectWithTag("MotherFairyPool").GetComponent<MotherFairyPool>();
 
-        score.text = _currentScore.ToString();
-        levelName.text = SceneManager.GetActiveScene().name;
-        lives.text = _lives.ToString();
-        setPowerupIcon();
+        if (!isMainMenuFairy)
+        {
+            score.text = _currentScore.ToString();
+            levelName.text = SceneManager.GetActiveScene().name;
+            lives.text = _lives.ToString();
+            setPowerupIcon();
 
-        loadingScreen.SetActive(false);
-        pauseScreen.SetActive(false);
+            loadingScreen.SetActive(false);
+            pauseScreen.SetActive(false);
+        }
 
         isPaused = false;
 
@@ -185,8 +207,12 @@ public class GameManager : MonoBehaviour
     public static bool doubleShotisActive;
     public static float doubleShotStartTime;
 
+    public bool isMainMenuFairy;
+
     public void Update()
     {
+        if (isMainMenuFairy) return;
+
         if (!isBossRound)
         {
             if (timeSlowisActive && (Time.time - timeSlowStartTime) >= 10)
@@ -394,6 +420,6 @@ public class GameManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         Time.timeScale = 1;
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }

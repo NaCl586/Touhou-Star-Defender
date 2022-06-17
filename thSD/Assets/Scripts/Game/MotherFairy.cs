@@ -24,6 +24,7 @@ public class MotherFairy : MonoBehaviour
     {
         _pool = GameObject.FindGameObjectWithTag("MotherFairyPool").GetComponent<MotherFairyPool>();
         _as = this.GetComponent<AudioSource>();
+        _as.volume = PlayerPrefs.GetFloat("soundVolume", 0.25f);
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 

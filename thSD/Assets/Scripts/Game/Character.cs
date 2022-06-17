@@ -46,6 +46,8 @@ public class Character : MonoBehaviour
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         _character = this.GetComponent<SpriteRenderer>();
         _audioSource = this.GetComponent<AudioSource>();
+        _audioSource.volume = PlayerPrefs.GetFloat("soundVolume", 0.25f);
+
         _poolManager = GameObject.FindGameObjectWithTag("ShotPool").GetComponent<ShotPool>();
         Respawn();
 

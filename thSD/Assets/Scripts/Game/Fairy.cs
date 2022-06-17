@@ -26,6 +26,8 @@ public class Fairy : MonoBehaviour
         _poolManager = _poolManager = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<BulletPool>();
         _as = this.gameObject.GetComponent<AudioSource>();
 
+        _as.volume = PlayerPrefs.GetFloat("soundVolume", 0.25f);
+
         gameObject.name = fairyData._name;
         this.HP = fairyData.HP;
         this.GetComponent<SpriteRenderer>().sprite = fairyData.sprite;

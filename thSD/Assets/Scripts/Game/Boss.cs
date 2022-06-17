@@ -16,5 +16,7 @@ public class Boss : MonoBehaviour
     {
         _bp = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<BulletPool>();
         _as = this.gameObject.GetComponent<AudioSource>();
+
+        _as.volume = PlayerPrefs.GetFloat("soundVolume", 0.25f);
     }
 }
