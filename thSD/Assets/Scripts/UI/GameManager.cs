@@ -249,7 +249,7 @@ public class GameManager : MonoBehaviour
         }
         else if (isBossRound)
         {
-            if (ReisenManager.isDead)
+            if (BossManager.isDead)
             {
                 if (!isWon)
                 {
@@ -349,7 +349,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         while (fairies.Count > 0)
         {
-            char dir = Random.Range(1, 100) % 2 == 0 ? 'l' : 'r';
+            char dir = Random.Range(1, 101) % 2 == 0 ? 'l' : 'r';
             _mfPool.InstantiateNewMotherFairy(dir);
             yield return new WaitForSeconds(Random.Range(10f, 20f));
         }
@@ -360,7 +360,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         while (bonusMotherFairy > 0)
         {
-            char dir = Random.Range(1, 100) % 2 == 0 ? 'l' : 'r';
+            char dir = Random.Range(1, 101) % 2 == 0 ? 'l' : 'r';
             _mfPool.InstantiateNewMotherFairy(dir, Random.Range(-1.3f, 2.6f), Random.Range(0.0125f, 0.0375f));
             yield return new WaitForSeconds(Random.Range(0.5f, 5f));
             bonusMotherFairy--;

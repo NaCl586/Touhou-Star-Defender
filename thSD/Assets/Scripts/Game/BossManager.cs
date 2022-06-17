@@ -73,7 +73,5 @@ public class BossManager : MonoBehaviour
         glow.SetActive(false);
         _gm.addScore(1500);
         isDead = true;
-        _gm.setWinText();
     }
-
 }
