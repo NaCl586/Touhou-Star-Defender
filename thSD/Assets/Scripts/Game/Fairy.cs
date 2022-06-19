@@ -182,6 +182,7 @@ public class Fairy : MonoBehaviour
     {
         int count = Random.Range(4, 12);
         float gap = 180 / count;
+        bool clockwise = Random.Range(0, 100) % 2 == 0;
         int evenLoop = 0;
         for (int i = 0; i < loops; i++)
         {
@@ -198,7 +199,10 @@ public class Fairy : MonoBehaviour
                     bullets.SetActive(false);
                     bullets.GetComponent<Bullet>().bulletSpeed = bulletSpeed;
                     bullets.GetComponent<Bullet>().homing = false;
-                    bullets.GetComponent<Bullet>().direction = (k * offset) + evenLoop + addedAngle + (j * gap);
+                    if (clockwise)
+                        bullets.GetComponent<Bullet>().direction = (k * offset) + evenLoop + addedAngle + (j * gap);
+                    else
+                        bullets.GetComponent<Bullet>().direction = -(k * offset) - evenLoop + addedAngle - (j * gap);
                     bullets.SetActive(true);
                 }
                 yield return new WaitForSeconds(delay);

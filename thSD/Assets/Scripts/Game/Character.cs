@@ -6,6 +6,12 @@ using DG.Tweening;
 
 public class Character : MonoBehaviour
 {
+    private KeyCode moveLeftBind;
+    private KeyCode moveRightBind;
+    private KeyCode shootBind;
+    private KeyCode powerupBind;
+    private KeyCode focusBind;
+
     public SpriteRenderer hitbox_front;
     public SpriteRenderer hitbox_back;
     public SpriteRenderer shield;
@@ -42,6 +48,12 @@ public class Character : MonoBehaviour
 
     void Start()
     {
+        moveLeftBind = Utils.chartoKeycode[PlayerPrefs.GetString("moveLeft", "Left")];
+        moveRightBind = Utils.chartoKeycode[PlayerPrefs.GetString("moveRight", "Right")];
+        shootBind = Utils.chartoKeycode[PlayerPrefs.GetString("shoot", "Z")];
+        powerupBind = Utils.chartoKeycode[PlayerPrefs.GetString("powerup", "X")];
+        focusBind = Utils.chartoKeycode[PlayerPrefs.GetString("focus", "LShift")];
+
         _initPos = transform.position;
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         _character = this.GetComponent<SpriteRenderer>();
@@ -131,17 +143,17 @@ public class Character : MonoBehaviour
     {
         if (isDead) return;
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(focusBind))
         {
             hitbox_front.DOColor(Color.white, 0.25f);
             hitbox_back.DOColor(new Color(1,1,1,0.375f), 0.25f);
-            if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x >= -4)
+            if (Input.GetKey(moveLeftBind) && transform.position.x >= -4)
             {
                 transform.position += (Vector3.left * moveSpeed);
                 animator.SetBool("isMoving", true);
                 _character.flipX = false;
             }
-            else if (Input.GetKey(KeyCode.RightArrow) && transform.position.x <= 4)
+            else if (Input.GetKey(moveRightBind) && transform.position.x <= 4)
             {
                 transform.position += (Vector3.right * moveSpeed);
                 animator.SetBool("isMoving", true);
@@ -153,13 +165,13 @@ public class Character : MonoBehaviour
         {
             hitbox_front.DOColor(Color.clear, 0.25f);
             hitbox_back.DOColor(Color.clear, 0.25f);
-            if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x >= -4)
+            if (Input.GetKey(moveLeftBind) && transform.position.x >= -4)
             {
                 transform.position += (Vector3.left * moveSpeed * 2);
                 animator.SetBool("isMoving", true);
                 _character.flipX = false;
             }
-            else if (Input.GetKey(KeyCode.RightArrow) && transform.position.x <= 4)
+            else if (Input.GetKey(moveRightBind) && transform.position.x <= 4)
             {
                 transform.position += (Vector3.right * moveSpeed * 2);
                 animator.SetBool("isMoving", true);
@@ -169,7 +181,7 @@ public class Character : MonoBehaviour
         }
 
         //shoot
-        if (Input.GetKey(KeyCode.Z) && (Time.time - _lastShootTime > GameManager.shootFrequency))
+        if (Input.GetKey(shootBind) && (Time.time - _lastShootTime > GameManager.shootFrequency))
         {
             _lastShootTime = Time.time;
             _poolManager.InstantiateNewBullet();
@@ -177,7 +189,7 @@ public class Character : MonoBehaviour
         }
 
         //powerup
-        if (Input.GetKey(KeyCode.X) && activePowerup != -1)
+        if (Input.GetKey(powerupBind) && activePowerup != -1)
         {
             if (activePowerup < 4)
                 Instantiate(powerupList[activePowerup], transform.position, Quaternion.identity);

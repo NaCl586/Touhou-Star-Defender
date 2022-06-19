@@ -19,6 +19,7 @@ TagManager:
   - MotherFairyPool
   - MFItem
   - Boss
+  - Music
   layers:
   - Default
   - TransparentFX

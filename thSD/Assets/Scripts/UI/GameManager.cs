@@ -126,7 +126,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if(!isMainMenuFairy) character = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
+        gameMusic = GameObject.FindGameObjectWithTag("Music");
+
+        if (!isMainMenuFairy) character = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
         _mfPool = GameObject.FindGameObjectWithTag("MotherFairyPool").GetComponent<MotherFairyPool>();
 
         if (!isMainMenuFairy)
@@ -420,6 +422,7 @@ public class GameManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         Time.timeScale = 1;
+        Destroy(gameMusic);
         SceneManager.LoadScene(0);
     }
 }
