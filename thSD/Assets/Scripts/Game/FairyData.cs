@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +9,7 @@ public class FairyData : ScriptableObject
     public string _name;
     public int HP;
     public Sprite sprite;
-    public AnimatorController animator;
+    public RuntimeAnimatorController animator;
     
     [Header("Death Effect")]
     public AudioClip deathSound;
