@@ -4989,10 +4989,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Touhou Star Defender\n\nCreated by:\nGerson Natanael (2440061360) \r\nKenneth
-    Ardion (2440024794) \r\nMuhammad Naufal (2440035822)\n\nThis project is made
-    for the assignment project of Game Programming course.\r\n\r\nAssets used are
-    from Touhou Project (c) ZUN"
+  m_Text: "Touhou Star Defender\n\nCreated by Bruhus Momentus Studius:\nGerson Natanael
+    (2440061360) \r\nKenneth Ardion (2440024794) \r\nMuhammad Naufal (2440035822)\n\nThis
+    project is made for the assignment project of Game Programming course.\r\n\r\nAssets
+    used are from Touhou Project (c) ZUN"
 --- !u!222 &1125677845
 CanvasRenderer:
   m_ObjectHideFlags: 0

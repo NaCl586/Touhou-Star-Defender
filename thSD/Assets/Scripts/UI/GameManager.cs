@@ -213,7 +213,11 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (isMainMenuFairy) return;
+        if (isMainMenuFairy)
+        {
+            Fairy.moveSpeed = 0.0125f / 2;
+            return;
+        }
 
         if (!isBossRound)
         {
