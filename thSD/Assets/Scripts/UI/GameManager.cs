@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     private bool isPaused;
 
-    private static int _currentScore = 0;
-    private static int _lives = 5;
+    public static int _currentScore = 0;
+    public static int _lives = 5;
     [HideInInspector] public List<Fairy> fairies = new List<Fairy>();
     private int initFairyCount;
     private Character character;
@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
         gameOverText.DOColor(Color.clear, 3f).OnComplete(() => {
             gameOverText.DOColor(new Color(0, 0.830188f, 0.06344367f, 1), 0.25f);
         });
+
+        StartCoroutine(backToMissionSelect(8f));
     }
 
     public void setWinText()

@@ -103,6 +103,8 @@ public class MainMenuManager : MonoBehaviour
     public void LoadMission(int mission)
     {
         musicAS.Stop();
+        GameManager._lives = 5;
+        GameManager._currentScore = 0;
         if (mission == 1) SceneManager.LoadScene(1);
         else if (mission == 2) SceneManager.LoadScene(13);
         else if (mission == 3) SceneManager.LoadScene(25);

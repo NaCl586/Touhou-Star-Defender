@@ -2551,6 +2551,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2667468383412492550, guid: a753ee4a87d87c14396959894a54ec39, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 474.2999
+      objectReference: {fileID: 0}
     - target: {fileID: 2875777357430697647, guid: a753ee4a87d87c14396959894a54ec39, type: 3}
       propertyPath: m_RootOrder
       value: 10
